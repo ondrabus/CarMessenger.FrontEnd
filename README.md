@@ -1,30 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+This is a front-end implementation of the CarMessenger.app project.
 
-## Getting Started
 
-First, run the development server:
+## How it works
+
+This application features the front-end of CarMessenger. It connects to [CarMessenger.BackEnd](https://github.com/ondrabus/CarMessenger.BackEnd) project to get messages based on a license plate and a country code the visitors puts in.
+
+Make sure to add a .env file with BACKEND_BASE_URI value:
+
+```bash
+BACKEND_BASE_URI=https://localhost:44316
+```
+
+To run the app simply execute:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+And open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## License
 
-## Learn More
+[MIT](http://www.opensource.org/licenses/mit-license.html)
 
-To learn more about Next.js, take a look at the following resources:
+## Disclaimer
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+No warranty expressed or implied. Software is as is.
