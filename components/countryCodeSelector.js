@@ -11,7 +11,7 @@ export default function CountryCodeSelector({initialCountryCode, onCountryChange
         onCountryChange(code);
     }
 
-    const countries = countryCodes.map(cc => (<li onClick={e => setCountryCode(cc.code)}><i className={`flag-icon flag-icon-${cc.code}`}></i> {cc.name}</li>));
+    const countries = countryCodes.map(cc => (<li onClick={e => setCountryCode(cc.code)} key={cc.code}><i className={`flag-icon flag-icon-${cc.code}`}></i> {cc.name}</li>));
 
     return (<React.Fragment>
                 <span className="flag" onClick={e => setIsOpen(!isOpen)}>
