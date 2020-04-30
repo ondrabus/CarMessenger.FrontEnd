@@ -44,7 +44,11 @@ function Profile({ data }) {
         <main>
             <h2><i className={`flag-icon flag-icon-${countryCode}`}></i> {country.plateDisplay(licensePlate)}</h2>
             {list}
+            <div>
+            <p class="black">To submit a message send an SMS or WhatsApp message in the following format:<br /><strong>{'{countryCode},{license plate},{your message}'}</strong><br />(e.g. "cz,1ab 1563,Your left brake light is broken")<br />to <strong>+1 (334) 367-4637</strong>.</p>
+            </div>
         </main>
+        
     </div>
   )
 }

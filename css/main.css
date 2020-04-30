@@ -219,5 +219,8 @@ a {
 a:hover {
   text-decoration: underline;
 }
+.black {
+  color: #011628;
+}
 
 /*# sourceMappingURL=main.css.map */
